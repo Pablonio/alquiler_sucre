@@ -2,7 +2,8 @@
 import NextAuth, { AuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import AzureADProvider from "next-auth/providers/azure-ad";
-export const authOptions: AuthOptions = {
+
+const authOptions: AuthOptions = {
   providers: [
     // Proveedor de Google
     GoogleProvider({
@@ -20,9 +21,7 @@ export const authOptions: AuthOptions = {
   session: {
     strategy: "jwt",
   },
-  secret: process.env.NEXTAUTH_SECRET,
+  secret: "NEXTAUTH_SECRET",
 };
 
-const handler = NextAuth(authOptions);
-
-export { handler as GET, handler as POST };
+export default NextAuth(authOptions);
