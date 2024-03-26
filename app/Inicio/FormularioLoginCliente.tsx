@@ -3,10 +3,10 @@ import React, { useEffect, useState } from 'react';
 import { signIn, useSession } from 'next-auth/react';
 import { useForm } from 'react-hook-form';
 
-import Input from '@/app/Inicio/componentes/Input';
-import Button from '@/app/Inicio/componentes/Boton';
-import GoogleButton from '@/app/Inicio/componentes/GoogleButton';
-import MicrosoftButton from '@/app/Inicio/componentes/MicrosoftButton'; // Corregido el nombre del componente
+import Input from './componentes/Input';
+import Button from './componentes/Boton';
+import GoogleButton from './componentes/GoogleButton';
+import MicrosoftButton from './componentes/MicrosoftButton'; // Corregido el nombre del componente
 
 type Variante = 'INICIO_SESION' | 'REGISTRAR';
 
