@@ -91,7 +91,7 @@ const Formulario = () => {
               <div className="w-full border-t border-gray-300" />
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="bg-white px-2 text-gray-500">O continuar con</span>
+              <span className="bg-white px-2 text-gray-500">Iniciar Sesion con</span>
             </div>
           </div>
           <div className="mt-6 grid grid-cols-2 gap-3">
